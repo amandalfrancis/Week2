@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Challenge</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jQueryChallenge.js"></script>
+    <link rel="stylesheet" href="jQueryChallenge.css">
+    <script src="jQueryChallenge.js"></script>
+</head>
+
+<body bgcolor="#AEA4BF">
+    <script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("p").append(" <b>Appended text</b>.");
+    });
+
+    $("#btn2").click(function(){
+        $("ol").append("<li>Appended item</li>");
+    });
+});
+</script>
+
+
+
+
+
+    <h1>Shopping List</h1>
+
+    <h2>
+        <input type='text' id='idea' />
+        <input type='button' value='add to list' id='add' />
+        <ul id='list'></ul>
+
+
+    </h2>
+</body>
+
+</html>
